@@ -297,7 +297,6 @@ public class ScheduleServiceImpl extends ServiceImpl<ScheduleMapper, Schedule> i
     public ScheduleOrderVo getScheduleOrderVo(String scheduleId) {
         ScheduleOrderVo scheduleOrderVo = new ScheduleOrderVo();
         Schedule schedule = this.getScheduleId(scheduleId);
-//        Schedule schedule = baseMapper.selectById(scheduleId);
         if(schedule == null){
             throw new YtException(ResultCodeEnum.PARAM_ERROR);
         }

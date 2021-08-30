@@ -10,7 +10,7 @@
                 and hosname like CONCAT ('%',#{vo.hosname},'%')
             </if>
             <if test="vo.reserveDateBegin != null and vo.reserveDateBegin != ''">
-                and reserve_date >= #{vo.reserveDateBegin}
+                and reserve_date &gt;= #{vo.reserveDateBegin}
             </if>
             <if test="vo.reserveDateEnd != null and vo.reserveDateEnd != ''">
                 and reserve_date &lt;= #{vo.reserveDateEnd}

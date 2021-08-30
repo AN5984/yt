@@ -55,6 +55,7 @@ public class DictController {
         String dictName = dictService.getDictName(dictCode,value);
         return dictName;
     }
+
     @ApiOperation(value = "根据value查询查询名称")
     @GetMapping("getName/{value}")
     public String getName(@PathVariable String value){

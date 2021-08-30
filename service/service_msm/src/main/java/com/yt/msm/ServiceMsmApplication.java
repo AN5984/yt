@@ -15,6 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)//取消数据源自动配置
 @EnableDiscoveryClient()
 @EnableFeignClients(basePackages = "com.yt")
+@ComponentScan(basePackages = "com.yt")
 public class ServiceMsmApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceMsmApplication.class, args);

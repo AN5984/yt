@@ -115,14 +115,12 @@ public class ApiHospController {
         return Result.ok(schedule);
     }
 
-    //根据排班id获取预约下单数据
     @ApiOperation(value = "根据排班id获取预约下单数据")
     @GetMapping("inner/getScheduleOrderVo/{scheduleId}")
     public ScheduleOrderVo getScheduleOrderVo(@PathVariable("scheduleId") String scheduleId) {
         return scheduleService.getScheduleOrderVo(scheduleId);
     }
 
-    //获取医院签名信息
     @ApiOperation(value = "获取医院签名信息")
     @GetMapping("inner/getSignInfoVo/{hoscode}")
     public SignInfoVo getSignInfoVo(@PathVariable("hoscode") String hoscode) {

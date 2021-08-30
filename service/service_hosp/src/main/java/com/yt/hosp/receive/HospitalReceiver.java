@@ -52,5 +52,4 @@ public class HospitalReceiver {
             rabbitService.sendMessage(MqConst.EXCHANGE_DIRECT_MSM, MqConst.ROUTING_MSM_ITEM, msmVo);
         }
     }
-
 }
